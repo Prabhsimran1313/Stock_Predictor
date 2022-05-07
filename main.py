@@ -1,11 +1,10 @@
 from http import client
 import requests
 from twilio.rest import Client
+import os
 
-account_sid ="AC6f6eed225fbd2d27b0d3987821480599"
-auth_token ="b199da99ea0aa4c704e1f5c1e3a4e835"
-
-
+account_sid = os.environ['TWILIO_ACCOUNT_SID']
+auth_token = os.environ['TWILIO_AUTH_TOKEN']
 
 STOCK_NAME = "TSLA"
 COMPANY_NAME = "Tesla Inc"
